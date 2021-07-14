@@ -26,21 +26,16 @@ var test = Boolean(20);
 // пременная test имеет значение true
 console.log(test);
 
-let arrayM = [2, 3, 5, 8];
-
+const arrayM = [2, 3, 5, 8];
 let sum = 1;
 
-for (let g = 0; g < arrayM.length; g++) {
-  
-  sum = sum * arrayM[g];
-
+for (let i = 0; i < arrayM.length; i++) {
+  sum = sum * arrayM[i];
 }
 
 console.log(sum);
 
 let arrayBig = [2, 5, 8, 15, 0, 6, 20, 3];
-
-let q = 1;
 
 for(let i = 0; i < arrayBig.length; i++) {
   
@@ -50,8 +45,7 @@ for(let i = 0; i < arrayBig.length; i++) {
 }
 
 for(let i = 0; i < arrayBig.length; i++) {
-  if(arrayBig[i] % 2 !== 0 || arrayBig[i] == 0) {
-    continue
+  if((arrayBig[i] % 2) === 0 && arrayBig[i] > 0) {
+    console.log(arrayBig[i]);
   }
-  console.log(arrayBig[i]);
 }
