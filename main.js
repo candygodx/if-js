@@ -43,7 +43,7 @@ for(let i = 0; i < arrayBig.length; i++) {
 }
 
 for(let i = 0; i < arrayBig.length; i++) {
-  if(arrayBig[i] % 2 === 0 && arrayBig[i] > 0) {
+  if(arrayBig[i] % 2 === 0) {
     console.log(arrayBig[i]);
   }
 }
