@@ -30,22 +30,20 @@ const arrayM = [2, 3, 5, 8];
 let sum = 1;
 
 for (let i = 0; i < arrayM.length; i++) {
-  sum = sum * arrayM[i];
+  sum *= arrayM[i];
 }
-
 console.log(sum);
 
-let arrayBig = [2, 5, 8, 15, 0, 6, 20, 3];
+const arrayBig = [2, 5, 8, 15, 0, 6, 20, 3];
 
 for(let i = 0; i < arrayBig.length; i++) {
-  
   if(arrayBig[i] > 5 && arrayBig[i] < 10) {
     console.log(arrayBig[i]);
   }
 }
 
 for(let i = 0; i < arrayBig.length; i++) {
-  if((arrayBig[i] % 2) === 0 && arrayBig[i] > 0) {
+  if(arrayBig[i] % 2 === 0 && arrayBig[i] > 0) {
     console.log(arrayBig[i]);
   }
 }
