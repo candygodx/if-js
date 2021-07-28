@@ -47,3 +47,66 @@ for(let i = 0; i < arrayBig.length; i++) {
     console.log(arrayBig[i]);
   }
 }
+
+function isPalindrome(word) {
+  return word.toLowerCase() === word.toLowerCase().split("").reverse().join("");
+}
+console.log(isPalindrome("madam"));
+
+function min(a, b) {
+  if (a < b) {
+    return a;
+  }
+  return b;
+}
+console.log(min(10, 20));
+
+function max(a, b) {
+  if (a > b) {
+    return a;
+  }
+  return b;
+}
+console.log(max(5, 20));
+
+function tern (a, b) {
+  return a < b ? a : b;
+}
+console.log(tern(55, 6));
+
+const arrayLong = [10, 24, 40, 33, 64, 20, 78, 0, 8, 100];
+const arrayZero = (arrayLong) => {
+  return arrayLong.map((number) => {
+    let str = '' + number;
+    if (str.includes('0')) {
+      return str.replace(/0/gim, 'zero');
+    }
+    else {
+      return number;
+    }
+  })
+}
+console.log(arrayZero(arrayLong));
+
+function summ(a) {
+  return function(f) {
+    return a += f;
+  }
+}
+console.log(summ(5)(2));
+
+const colors = ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'];
+const ids = ['text1', 'text2', 'text3'];
+
+ids.forEach((id) => {
+  const button = document.getElementById(id);
+  let clickColor = 0;
+
+  button.addEventListener('click', function() {
+    button.style.color = colors[clickColor];
+    clickColor++;
+    if (clickColor >= colors.length) {
+      clickColor = 0;
+    }
+  });
+  })
